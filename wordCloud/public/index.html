@@ -30,8 +30,8 @@
      var result = "";
       
       for(var i = 0; i < theWords.length; i = i + 1){
-          //result = result + " " + theWords[i]; //original
-          result = result + " " + theWords[i].style.fontSize(wordCount[theWords[i]] * 10 + "px"); //change font
+         result = result + " " +// theWords[i].style.fontSize(wordCount[theWords[i]] * 10 + "px");//change font
+            "<span style='font-size:(wordCount[theWords[i]] * 10) px'>" + theWords[i] + "</span>"
       }
       return result;
     }
